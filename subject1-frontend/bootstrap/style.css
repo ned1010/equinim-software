@@ -1,0 +1,17 @@
+.col,
+.col-5,
+.col-6,
+.col-1,
+.col-sm-8,
+.col-sm-4,
+.col-sm,
+.col-md-6,
+.col-lg-2,
+.col-lg-8 {
+	border: 2px solid green;
+}
+
+img {
+	width: 200px;
+	height: 200px !important;
+}

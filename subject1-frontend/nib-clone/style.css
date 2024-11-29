@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.pre-nav {
+	padding: 16px 0px;
+}
+
+.box {
+	font-size: 2rem;
+}
+
+.svg-icon {
+	fill: rgb(20, 74, 56);
+}
+
+.phone {
+	color: rgb(20, 74, 56);
+	font-weight: 900;
+	font-size: 32px;
+}
+
+.fa-solid {
+	font-size: 23.98px;
+}
+.fa-magnifying-glass {
+	padding: 12px;
+	margin-right: 8px;
+}
+
+.btn {
+	background-color: #82e578;
+	color: #144a38;
+	font-size: 16px;
+	padding: 16px 32px;
+	font-weight: 900;
+}
+
+.nav-bar {
+	background-color: #e2e2e2;
+	padding: 8px 0;
+}
+
+.nav-link {
+	color: #262626;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* Banner Section  */
+.banner {
+	background-color: #f5f0d6;
+	padding: 4rem;
+	margin: 0;
+}
+
+.banner-title {
+	padding: 16px 0;
+	font-size: 54px;
+	color: #144a38;
+	font-weight: 600;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.banner-paragraph {
+	padding: 16px 0;
+	color: #434343;
+	font-size: 18px;
+}
+.banner-btn {
+	padding: 16px 0;
+}
+
+.banner-image {
+	height: 250px;
+}
+
+/* Product Card  */
+.product-card {
+	background-color: #dae6d2;
+	padding: 64px 32px;
+}
+
+.product-title {
+	font-size: 24px;
+	color: #144a38;
+	font-weight: 600;
+}
+.product-paragraph {
+	padding: 16px 0 0;
+}
+
+.col-lg-2 {
+	background-color: #f6f9f4;
+	padding: 12px 16px;
+}
+
+/* Promotion  */
+.promotion {
+	padding: 64px;
+	color: #144a38;
+}
+.promotion-col {
+	padding: 32px;
+	background-color: rgb(206, 222, 196);
+}
+.promotion-title {
+	font-size: 36px;
+}
+
+.col-lg-10 {
+	padding: 16px 32px;
+}
+
+.row-container {
+	border: 0.3px solid #d4d1d1;
+	border-radius: 10px;
+	z-index: 5;
+}
+
+/* Reason  */
+.reason {
+	padding: 64px 24px;
+	background-color: #144a38;
+	color: #ffffff;
+}
+
+.reason-title {
+	color: #82e578;
+}
+.col-lg-4 {
+	padding: 32px 24px;
+}

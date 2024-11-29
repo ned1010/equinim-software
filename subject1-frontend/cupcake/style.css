@@ -1,0 +1,9 @@
+.flex-img {
+	height: 100px;
+	width: 100px;
+}
+
+.flex-image-container {
+	display: flex;
+	justify-content: space-evenly;
+}

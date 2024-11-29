@@ -1,0 +1,51 @@
+/* First method of using display properties  */
+
+.container {
+	border: 2px solid red;
+}
+
+.box {
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+}
+
+.green {
+	background-color: green;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.red {
+	background-color: red;
+}
+.black {
+	background-color: black;
+}
+
+.orange {
+	background-color: orange;
+}
+.blue {
+	background-color: blue;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.brown {
+	background-color: brown;
+}
+
+.flex-box {
+	height: 150px;
+	width: 100px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+}

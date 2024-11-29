@@ -1,0 +1,12 @@
+#maps{
+    width: 600px;
+    height: 480px;
+    border: 2px solid red;
+    display: inline;
+}
+
+#pdf{
+    width: 600px;
+    height: 480px;
+    border: 2px solid blue;
+}

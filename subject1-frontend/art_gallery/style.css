@@ -1,0 +1,61 @@
+footer {
+	background-color: #2d2e27;
+	color: rgb(128, 124, 117);
+}
+/* This is h3 element /
+h3 {
+  color: #e8e8da;
+}
+#art-gallery-name {
+  text-align: center;
+  color: #e8e8da;
+  font-size: 5 rem;
+  font-weight: 900;
+  font-family: serif, "Times New Roman", Times;
+}
+
+/ Footer */
+.copyright-footer {
+	text-align: center;
+}
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	text-align: justify;
+}
+
+.footer-container ul li {
+	list-style-type: none;
+	padding: 5px 0;
+}
+
+.footer-container ul {
+	padding: 0;
+}
+
+.brand {
+	border: 2px solid green;
+	margin: 30rem 0;
+	font-size: 10rem !important;
+	font-weight: 500 !important;
+}
+.navbar {
+	border-bottom: 2px solid gray;
+}
+
+.top-title {
+	color: #ffffff;
+	font-size: 11rem;
+	font-weight: 900;
+}
+.bottom-title {
+	color: #ffffff;
+	font-size: 11rem;
+	font-weight: 900;
+	right: 0;
+}
+
+.mid-title {
+	font-size: 8rem;
+	font-family: cursive;
+}

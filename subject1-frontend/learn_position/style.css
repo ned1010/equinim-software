@@ -1,0 +1,53 @@
+body {
+	height: 200vh;
+}
+
+.parent_div {
+	border: 2px solid blue;
+	position: relative;
+}
+
+.children_div {
+	border: 2px solid red;
+}
+
+/* This is the styling for static position */
+#static {
+	position: static;
+}
+
+/* Relative positioning allow the element to be moved */
+#relative {
+	position: relative;
+	left: 200px;
+}
+
+#fixed {
+	position: fixed;
+	background-color: violet;
+	right: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#sticky {
+	position: sticky;
+	top: 0;
+	background-color: brown;
+}
+
+#absolute {
+	position: absolute;
+	background-color: green;
+	bottom: 0;
+	left: 0;
+}
+
+.absolute-div {
+	height: 50px;
+	width: 50px;
+	background-color: aqua;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
