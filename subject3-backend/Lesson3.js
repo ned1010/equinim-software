@@ -68,6 +68,9 @@ console.log(`${num1} + ${num2} is equal to ${num1+num2}`)
 >= greater than or equal to
 <= lesser than or equal to
 == equal to 
+
+!= not equal to 
+!== not equal to and not equal data types
 */
 let number1 = 35;
 let number2 = 25;
@@ -77,3 +80,6 @@ console.log(number1 < number2) //false
 console.log(number1 > number2)//true
 console.log(number2 == number3) // true because it checks just the face value
 console.log((number2 === number3)) //false because it checks the value and the data type 
+
+console.log(5 != '5') // checking not equal value, since 5==5, it will false 
+console.log(5 !== '5') //returns true because data types are different 
