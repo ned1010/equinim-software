@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="change">Software Engineering Class</p>
+    
+    <button onclick="colorChange()">Change the color</button>
+    <script>
+        function colorChange(){
+            console.log('working');
+            //element to change 
+            let changeText = document.getElementById('change');
+            console.log(changeText.innerHTML);
+
+            //changed the text to programming class
+            changeText.innerHTML = 'Programming Class'
+
+        }
+
+    </script>
+</body>
+</html>

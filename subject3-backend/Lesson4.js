@@ -69,8 +69,7 @@ divideNumbers(10, 5);
 divideNumbers(10000293283823,1298382);
 
 //Funlction with no parameters/inputs
+
 function helloWorld(){
     console.log("hi there")
 };
-helloWorld();
-helloWorld()
