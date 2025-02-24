@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnClick Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="title" class='change'>Welcome to the Class</p>
+    <button onclick='changeText()'>Change Text</button>
+    <button onclick="changeColor()" >Change color</button>
+    <h1 onclick="testClick()">Testing click event on h1 element</h1>
+    <script>
+        function changeText(){
+            console.log("Hey I got clicked");
+
+            //select the p element
+            let elementToChange = document.getElementById('title');
+            console.log(elementToChange);
+
+            //get the text
+            // console.log(elementToChange.innerHTML)
+            elementToChange.innerHTML = 'New Me!'
+        }
+        //list of colors
+        const colors = ['green', 'yellow', 'aqua', 'blue']
+        // console.log()
+        //getting random index 
+        const randomIndex = Math.floor(Math.random() * colors.length)
+        function changeColor(){
+            let changeColor = document.getElementById('title');
+            changeColor.style.color = colors[randomIndex];
+            changeColor.style.fontSize='30px';
+            console.log(changeColor)
+            
+        }
+
+        function testClick(){
+            console.log("click is working on h1 element");
+            window.location.href = '/'
+        }
+        
+    </script>
+</body>
+</html>
