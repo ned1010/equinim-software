@@ -8,5 +8,4 @@ Objectives:
 2. Build a an application that uses an event BMI
 3. Introduce to API and Postman
 4. Create a weathermapapi account and learn postman
-
 */
