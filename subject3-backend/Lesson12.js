@@ -9,3 +9,14 @@ Objectives:
 3. Create a weatherapp using things we learned so far and postman
 4. Self-study and recap of everything for using JavaScript for frontend tool
 */
+
+
+/*
+Lesson-12
+   weather-app
+      index.html
+      style.css
+      index.js
+
+
+*/
