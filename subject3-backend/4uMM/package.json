@@ -14,7 +14,9 @@
   "author": "bytes-24.1J",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.21.2",
-    "mongoose": "^8.12.1"
+    "mongoose": "^8.12.1",
+    "uuid": "^11.1.0"
   }
 }
