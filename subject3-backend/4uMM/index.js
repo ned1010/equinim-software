@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 //import all the routes
 import userRoute from './routes/userController.js';
 import authRoute from './routes/authController.js'
-
+import postRoute from './routes/postController.js'
 //instance of express 
 const app = express();
 
@@ -14,10 +14,10 @@ const port = 3000;
 //middlware 
 app.use(express.json()) //parse the request in json format
 
-
 //Add the all routes
 app.use(userRoute);
 app.use(authRoute);
+app.use(postRoute)
 
 
 //MONDB CONNECTION
