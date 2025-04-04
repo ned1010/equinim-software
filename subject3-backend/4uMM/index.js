@@ -1,5 +1,7 @@
-import express from 'express';
+import express from 'express'; //ESM import format
+// const express = require("express") //COMMON JS
 import mongoose from 'mongoose';
+import cors from 'cors';
 
 //import all the routes
 import userRoute from './routes/userController.js';
@@ -13,6 +15,7 @@ const port = 3000;
 
 //middlware 
 app.use(express.json()) //parse the request in json format
+app.use(cors("*")) //allow access from all domains and all methods
 
 //Add the all routes
 app.use(userRoute);
@@ -22,6 +25,8 @@ app.use(postRoute)
 
 //MONDB CONNECTION
 const connectionString = 'mongodb+srv://ned1010:Equinim12345@cluster0.ubded.mongodb.net/4umm'
+
+
 //connecting mongodb
 mongoose.connect(connectionString).then(function() {
     console.log("connected database");

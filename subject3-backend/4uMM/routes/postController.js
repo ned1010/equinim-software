@@ -74,7 +74,7 @@ router.put('/update-post/:id', async function(req, res){
             title: title, 
             content: content
         }
-        const updatedItem = await postModel.findOneAndUpdate(filter, updatePost);
+        const updatedItem = await postModel.findOneAndUpdate(filter, updatePost, {new: true});
         res.status(200).send({data: updatedItem, message: 'successfully updated'})
     } catch (error) {
         console.log(`Error updating the forum ${error}`)

@@ -75,7 +75,7 @@ router.post('/login', async function(req, res) {
         //if the user exists 
         const match = await bcrypt.compare(password, existingUser.password);
         if(match){
-            res.status(200).send({message: "You are login "});
+            res.status(200).send({message: "You are logged in"});
             return;
         } else {
             res.status(200).send({message: "Incorrect password"})
