@@ -25,6 +25,8 @@ function showReply() {
   replyArea.classList.remove("hide");
 }
 
+
+
 getData();
 function getData() {
   document.addEventListener("DOMContentLoaded", async () => {
@@ -33,25 +35,30 @@ function getData() {
       const response = await fetch(url);
       const data = await response.json();
 
-      console.log(data);
+      console.log("Data is coming from backend", data.data);
 
-      const title = document.getElementById("title");
-      const content = document.getElementById("content");
 
-      const firstItemTitle = data.data[0].title;
-      const firstItemContent = data.data[0].content;
+      //select the ul container
+      const ul = document.getElementById('subform-list');
+      let postsHTML = '';
+      for (let i=0; i < data.data.length; i++){
+        // console.log(data.data[i].title);
+        // console.log(data.data[i].content);
+        postsHTML += `
+        <li class="subforum-row">
+          <div class="subforum-icon subforum-column center">
+            <i class="fa fa-car center"></i>
+          </div>
+          <div class="subforum-description subforum-column">
+            <h4><a href="#" id="title">${data.data[i].title}</a></h4>
+            <p id="content">
+              ${data.data[i].content}
+            </p>
+          </div>
+        </li>`
+      }
 
-      title.innerText = firstItemTitle;
-      content.innerText = firstItemContent;
-
-      const title2 = document.getElementById("title2");
-      const content2 = document.getElementById("content2");
-
-      const secondItemTitle = data.data[1].title;
-      const secondItemContent = data.data[1].content;
-
-      title2.innerText = secondItemTitle;
-      content2.innerText = secondItemContent;
+      ul.innerHTML = postsHTML;
     } catch (error) {
       console.log(error);
     }
