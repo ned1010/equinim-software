@@ -57,7 +57,7 @@ function getData() {
           </div>
           <div class='buttons'>
           <button onclick="handleDeleteForum('${data.data[i].id}')">Delete</button>
-          <button onclick="handleEditForum('${data.data[i].id}','${data.data[i].title}', '${data.data[i].content}')">Edit </button>
+          <button onclick="showUpdateForm('${data.data[i].id}','${data.data[i].title}', '${data.data[i].content}')">Edit </button>
           </div>
         </li>`
       }
@@ -136,8 +136,9 @@ async function handleDeleteForum(id){
   }
 }
 
+let todoId = '';
 //edit a forum
-async function handleEditForum(id, title, content){
+ function showUpdateForm(id, title, content){
   // console.log(id);
   const updateContainer = document.getElementById('update-container');
   updateContainer.classList.remove('hide');
@@ -149,11 +150,41 @@ async function handleEditForum(id, title, content){
   contentExtracted.value = content
 
   // console.log(id, title, content)
+  todoId = id;
+}
 
-  try {
-    
-  } catch (error) {
-    console.log(`Error editing a forum from frontend ${error}`)
+async function handleUpdate(event){
+  event.preventDefault();
+
+  const title = document.getElementById('title').value;
+  const content = document.getElementById('content').value;
+  const updatedForum = {
+    title: title,
+    content: content
   }
+  // console.log(title, content);
+  // console.log(todoId);
 
+  const url = `http://localhost:3000/update-post/${todoId}`;
+  try {
+    const options = {
+      'method': "PUT",
+      'headers': {
+        'Content-Type': 'application/json'
+      },
+      'body': JSON.stringify(updatedForum)
+    }
+    const response = await fetch(url, options);
+    if (response.status === 200){
+      const {data, message} = await response.json();
+      console.log(data)
+      alert(message);
+      window.location.href = 'index.html'
+    } else{
+      const {message} = await response.json();
+      alert(message)
+    }
+  } catch (error) {
+    console.log(`Error updating a forum from frontend ${error}`)
+  }
 }
