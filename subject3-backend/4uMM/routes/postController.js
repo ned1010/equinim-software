@@ -6,6 +6,7 @@ import postModel from '../models/Post.js'
 const router = express.Router();
 //handle request to create a new post
 //new-post
+//localhost3000 - /
 router.post('/new-post', async function(req, res){
     // console.log(req)
     //destructing
