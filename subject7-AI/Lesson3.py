@@ -15,7 +15,7 @@ name = "Tom"
 # Dictionary
 
 # Concatenation
-# 'Hi, my name is ' + name 
+# 'Hi, my name is ' + name
 # f'Hi, my name is {PI}'
 
 # Logical Operations
@@ -34,12 +34,12 @@ name = "Tom"
 # students.append('Guy')
 # students.insert(1, 'Daniel')
 # print(students)
-# 
+#
 # students.pop(0)
 # students.remove('Mary')
-# 
+#
 # print(students)
-# 
+#
 # students.clear()
 # print(students)
 
@@ -98,13 +98,13 @@ students = ['John', 'Mary', 'Leo', 'Abdi']
 # print(type(age_int))
 # print(type(age_float))
 # print(type(age_str))
-     
+
 
 # Collections
 # List
 # Dictionary
 
-# Tuple 
+# Tuple
 # my_tuple = ('Tom', 'Ned', 'Abdi', 'Ned')
 # Not allowed: my_tuple[0] = 'Mark'
 # Not allowed: my_tuple.append('Daniel')
@@ -134,13 +134,13 @@ students = ['John', 'Mary', 'Leo', 'Abdi']
 # elif :
 # elif :
 # elif :
-# else    
+# else
 
 # match expression:
 #     case a:
-        
+
 #     case b:
-        
+
 #     case c:
 
 
@@ -148,10 +148,10 @@ students = ['John', 'Mary', 'Leo', 'Abdi']
 # def calculator(first_num, second_num, operator = 'add'):
 #      if operator == 'add':
 #          print(first_num + second_num)
-         
+
 #      elif operator == 'multiply':
 #          print(first_num * second_num)
-         
+
 # calculator(first_num = 5, second_num = 10, operator = 'multiply')
 
 # def passFunction():
@@ -170,17 +170,17 @@ students = ['John', 'Mary', 'Leo', 'Abdi']
 # tri_recursion(6)
 
 # def add_numbers(a:int, b:int) -> int:
-#     return a+b 
+#     return a+b
 
 # add_numbers(5+'10')
 
 
-1. Create a calculator function
+# 1. Create a calculator function
 
-def calculator(first_number, second_number, operation):
+# def calculator(first_number, second_number, operation):
 
-calculator(5, 10, 'power')
+# calculator(5, 10, 'power')
 
-2. is_palindrome('Civic') -> true or false
+# 2. is_palindrome('Civic') -> true or false
 
-3. word_count('This is first sentence. This is second sentence') -> 4
+# 3. word_count('This is first sentence. This is second sentence') -> 4
